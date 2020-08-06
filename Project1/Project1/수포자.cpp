@@ -36,8 +36,7 @@ vector<int> solution(vector<int> answers) {
 	}
 	
 	max = c[0] > c[1] ? ((c[0] > c[2]) ? c[0] : c[2]) : ((c[1] > c[2]) ? c[1] : c[2]);
-	for (int i = 0; i < 3; i++) cout << c[i] << " ";
-	cout << endl;
+
 	for (int i = 0; i < 3; i++)
 		if (c[i] == max) answer.push_back(i + 1);
 	return answer;
